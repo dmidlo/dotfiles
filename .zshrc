@@ -202,7 +202,7 @@ export LANG=en_US.UTF-8
 
 alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
 alias chrome-canary="/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary"
-alias l='ls -alh'
+alias ls='ls -alh'
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
