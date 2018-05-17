@@ -204,6 +204,7 @@ alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
 alias chrome-canary="/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary"
 alias ls='ls -alhG ./ --color=auto'
 
+
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
 
@@ -215,6 +216,9 @@ zstyle ':completion:*:manuals.*'  insert-sections   true
 zstyle ':completion:*:man:*'      menu yes select
 
 autoload -U compinit && compinit
+
+cd-projects () {cd ~/Dropbox/projects/$1}
+
 
 docker_host () {
     if [[ -n "$4" || $1 = "help" ]]; then
