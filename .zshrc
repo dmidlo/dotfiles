@@ -219,6 +219,15 @@ autoload -U compinit && compinit
 
 cd-projects () {cd ~/Dropbox/projects/$1}
 
+mac-get () {
+    if [[ $1 = "update" ]]; then
+        sudo port -d selfupdate
+    elif [[ $1 = "upgrade" ]]; then
+        sudo port -d upgrade outdated
+    elif [[ $1 = "install" ]]; then
+        sudo port -d install $2
+    fi
+}
 
 docker_host () {
     if [[ -n "$4" || $1 = "help" ]]; then
