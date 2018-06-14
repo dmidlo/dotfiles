@@ -19,7 +19,7 @@ pltask () {
         POWERLEVEL9K_MULTILINE_SECOND_PROMPT_PREFIX="%K{white}%F{black}\n $1 %f%k%F{white}%f $ "
     }
 
-    if [ -n "$3" ]; then
+    if [ -n "$4" ]; then
         echo "pltask only supports two args. did\nyou remember to use quotes when\ncreating a task?"
         return 1
     elif [ -z "$1" ]; then
@@ -51,8 +51,41 @@ pltask () {
         echo "      $ pltask \"Edit Super Cool Project\" add"
         echo "      $ pltask \"Write Blog Post\" a"
     elif [[ $1 = "list" || $1 = "ls" ]]; then
-        task next
+        if [ -z "$2" ]; then
+            if [ -z "$PLTASK_PROJECT" ]; then
+                task projects status:pending
+                echo "\n--------------------------------"
+                echo "Listing Tasks from All Projects"
+                echo "--------------------------------"
+                task next
+            else
+                task projects status:pending
+                task projects status:pending
+                echo "\n----------------------------------------------------"
+                echo "Listing Tasks from Project: $PLTASK_PROJECT"
+                echo "----------------------------------------------------"
+                task next project:$PLTASK_PROJECT status:pending
+            fi
+            
+        elif [[ $2 = "project" || $2 = "p" ]]; then
+            task projects status:pending
+            echo "\n----------------------------------------------------"
+                echo "Listing Tasks from Project: $3"
+                echo "----------------------------------------------------"
+            task next project:$3 status:pending
+        elif [[ $2 = "all" || $2 = "a" ]]; then
+            task projects status:pending
+            echo "\n--------------------------------"
+            echo "Listing Tasks from All Projects"
+            echo "--------------------------------"
+            task next
+        fi
     elif [[ $1 = "set" || $1 = "s" ]]; then
+        if [[ $2 = "project" || $2 = "p" ]]; then
+            export PLTASK_PROJECT=$3
+            echo $PLTASK_PROJECT
+        fi
+
         export PLTASK=`task _get $2.description`
         if [ -z "$PLTASK" ]; then
             export PLTASK=`task _get 1.description`
@@ -191,6 +224,7 @@ export HISTORY_SUBSTRING_SEARCH_FUZZY=1
 
 ###### User configuration
 export DEFAULT_USER="$USER"
+export JEKYLL_EDITOR="subl"
 export PATH="/opt/local/bin:/opt/local/sbin:$PATH"  #adds MacPorts bin and sbin to Path
 export MANPATH="/opt/local/man:$MANPATH" #MacPorts Man Path
 #export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
