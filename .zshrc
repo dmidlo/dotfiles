@@ -264,6 +264,7 @@ mac-get () {
         sudo port -d install $2
     fi
 }
+mac-get auto
 
 docker_host () {
     if [[ -n "$4" || $1 = "help" ]]; then
