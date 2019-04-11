@@ -303,6 +303,10 @@ gfmrender(){
     open "$HTMLFILE"
 }
 
+pathfinder(){
+    open -a "Path Finder.app" $1
+}
+
 shift-arrow() {
   ((REGION_ACTIVE)) || zle set-mark-command
   zle $1
