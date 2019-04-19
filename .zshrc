@@ -14,6 +14,11 @@ checkSource $ZSH/oh-my-zsh.sh
 checkSource $HOME/.pltask
 checkSource $HOME/.aliases
 
+# User Variables
+export DEFAULT_USER="$USER"
+export JEKYLL_EDITOR="code"
+export LANG=en_US.UTF-8
+
 #Path Extentions
 export PATH=$HOME/bin:/usr/local/bin:$PATH # If you come from bash you might have to change your $PATH.
 export PATH="/opt/local/bin:/opt/local/sbin:$PATH"  #adds MacPorts bin and sbin to Path
@@ -22,11 +27,6 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 export MANPATH="/opt/local/man:$MANPATH" #MacPorts Man Path
 export PATH=/usr/local/bin/mongodb/bin:$PATH #Mongo
 PATH=$PATH:"/Users/davidmidlo/.nvm/versions/node/v7.5.0/bin":"/Users/davidmidlo/.nvm/versions/node/v7.5.0/bin":"/usr/bin" && cd /Users/davidmidlo/.nvm/versions/node/v7.5.0/bin/../lib/node_modules/npm-completion && ./update
-
-
-export DEFAULT_USER="$USER"
-export JEKYLL_EDITOR="code"
-export LANG=en_US.UTF-8
 
 # Ruby Version Manager
 #export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
