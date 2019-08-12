@@ -265,6 +265,15 @@ mac-get () {
         sudo port -d upgrade outdated
     elif [[ $1 = "install" ]]; then
         sudo port -d install $2
+    elif [[ $1 = "auto" ]]; then
+        read -q -t 8 "response?mac-get:  Update Macports? [Y/n]:"
+        echo "\n"
+        if [[ "$response" =~ ^([yY][eE][sS]|[yY])+$ ]]; then
+            mac-get update
+            mac-get upgrade
+        else
+            echo "mac-get:  skipping mac-ports update."
+        fi
     fi
 }
 mac-get auto
