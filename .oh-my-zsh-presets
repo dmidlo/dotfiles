@@ -54,7 +54,6 @@ plugins=(boot2docker codeclimate colored-man-pages colorize command-not-found co
 
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
 ZSH_HIGHLIGHT_STYLES[cursor]='bold'
-
 ZSH_HIGHLIGHT_STYLES[alias]='fg=green,bold'
 ZSH_HIGHLIGHT_STYLES[suffix-alias]='fg=green,bold'
 ZSH_HIGHLIGHT_STYLES[builtin]='fg=green,bold'
