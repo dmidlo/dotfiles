@@ -1,5 +1,7 @@
-#pltask functions
 ## pltask is a lightweight facade to taskwarrior for use with Powerlevel9k's Second Prompt Prefix (by dmidlo @querentCode)
+POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
+POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX="\n"
 
 pltask () {
     setNewlinePrompt () {
