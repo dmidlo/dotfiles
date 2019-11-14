@@ -1,10 +1,8 @@
+echo "::::::   sourcing .pl9k.zshrc"
+
 ###### Powerlevel9k Settings
 POWERLEVEL9K_MODE="awesome-patched"
 ZSH_THEME="powerlevel9k/powerlevel9k"
-
-POWERLEVEL9K_PROMPT_ON_NEWLINE=true
-POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
-POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX="\n"
 
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon ssh context root_indicator dir dir_writable vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status command_execution_time background_jobs anaconda pyenv virtualenv rbenv rvm nodeenv nvm time)
@@ -24,7 +22,7 @@ POWERLEVEL9K_VCS_OUTGOING_CHANGES_ICON='\u2191'
 POWERLEVEL9K_VCS_MODIFIED_BACKGROUND='yellow'
 POWERLEVEL9K_VCS_UNTRACKED_BACKGROUND='009'
 
-POWERLEVEL9K_IP_INTERFACE=eth0
+POWERLEVEL9K_IP_INTERFACE=en0
 
 POWERLEVEL9K_SHORTEN_STRATEGY="truncate_middle"
 POWERLEVEL9K_SHORTEN_DIR_LENGTH=4
