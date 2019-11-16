@@ -7,9 +7,9 @@ alias ls='ls -alhG ./ --color=auto'
 cd-projects () {cd ~/Dropbox/projects/$1}
 pathfinder(){open -a "Path Finder.app" $1}
 
-source /Users/davidmidlo/Dropbox/projects/dotfiles/.mac-get.zshrc
-source /Users/davidmidlo/Dropbox/projects/dotfiles/.docker_host.zshrc
-source /Users/davidmidlo/Dropbox/projects/dotfiles/.gfmrender.zshrc
+source ~/.mac-get.zshrc
+source ~/.docker_host.zshrc
+source ~/.gfmrender.zshrc
 
 alias cb='cd ..'
 alias cbb='cd ../..'
