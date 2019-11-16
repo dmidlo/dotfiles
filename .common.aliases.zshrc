@@ -10,3 +10,9 @@ pathfinder(){open -a "Path Finder.app" $1}
 source /Users/davidmidlo/Dropbox/projects/dotfiles/.mac-get.zshrc
 source /Users/davidmidlo/Dropbox/projects/dotfiles/.docker_host.zshrc
 source /Users/davidmidlo/Dropbox/projects/dotfiles/.gfmrender.zshrc
+
+alias cb='cd ..'
+alias cbb='cd ../..'
+alias cbbb='cd ../../..'
+alias cbbbb='cd ../../../..'
+alias cbbbbb='cd ../../../../..'
