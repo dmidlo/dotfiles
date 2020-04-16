@@ -9,6 +9,9 @@ JEKYLL_EDITOR="code"
 ### NPM Config
 NVM_DIR="$HOME/.nvm"
 
+###### History Ignore
+HIST_IGNORE_SPACE
+
 ###### Zsh-history-substring-search
 HISTORY_SUBSTRING_SEARCH_ENSURE_UNIQUE=1
 HISTORY_SUBSTRING_SEARCH_FUZZY=1
