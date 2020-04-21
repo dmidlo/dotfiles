@@ -1,7 +1,5 @@
 echo "::::   sourcing .common.zshrc"
 
-npm config delete prefix
-
 DEFAULT_USER="$USER"
 LANG=en_US.UTF-8
 JEKYLL_EDITOR="code"

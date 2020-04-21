@@ -10,7 +10,7 @@ if [[ "$TERM_PROGRAM" = "vscode" ]]; then
     source ~/.vscode.zshrc
     source ~/.pl9k.zshrc
     source ~/.oh-my-zsh.zshrc
-elif [[ "$TERM_PROGRAM" = "iTerm.app" ]]; then
+elif [ "$TERM_PROGRAM" = "iTerm.app" ] || [ "$TERM_PROGRAM" = "Hyper" ]; then
     source ~/.pltask.zshrc
     source ~/.pl9k.zshrc
     source ~/.oh-my-zsh.zshrc

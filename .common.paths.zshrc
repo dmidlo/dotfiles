@@ -8,4 +8,4 @@ PATH="$PATH:/usr/local/mysql/bin" #mysql
 #PATH="$PATH:$HOME/.rvm/bin" # Add RVM
 PATH="$PATH:$HOME/.rvm/bin" # RVM
 PATH=/usr/local/bin/mongodb/bin:$PATH # MongoDB
-PATH=$PATH:"/Users/davidmidlo/.nvm/versions/node/v7.5.0/bin":"/Users/davidmidlo/.nvm/versions/node/v7.5.0/bin":"/usr/bin" # npm-completion
+PATH=$PATH:"/Users/davidmidlo/.nvm/versions/node/v13.9.0/bin":"/Users/davidmidlo/.nvm/versions/node/v13.9.0/bin":"/usr/bin" # npm-completion
