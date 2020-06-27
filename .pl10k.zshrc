@@ -1,0 +1,1 @@
+/Users/davidmidlo/.pl10k.zshrc
