@@ -1,1 +1,1 @@
-/Users/davidmidlo/.vscode.zshrc
+echo "::::::   sourcing .vscode.zshrc   :::::: "

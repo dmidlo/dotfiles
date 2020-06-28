@@ -1,1 +1,3 @@
-/Users/davidmidlo/.iterm.HotkeyWindow.zshrc
+echo "::::::   sourcing .iterm.HotkeyWindow.zshrc"
+#export EDITOR='code'
+#export VISUAL='code'
