@@ -20,6 +20,7 @@ elif [[ "$TERM_PROGRAM" = "Apple_Terminal" ]]; then
 fi
 
 source ~/.zsh-syntax-highlighting.zshrc
+source ~/.iterm2_shell_integration.zsh
 source ~/.common.scripts.zshrc
 
  # added for npm-completion https://github.com/Jephuff/npm-bash-completion
