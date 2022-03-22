@@ -7,7 +7,7 @@ echo "::::   sourcing .common.scripts.zshrc"
 
 ####### Zsh-AutoSuggestions Settings
 bindkey '^ ' autosuggest-accept
-bindkey '\e ' forward-word
+bindkey '^[ ' forward-word
 
 ####### Zsh Man Page Completion
 #zsh autocomplete man pages
