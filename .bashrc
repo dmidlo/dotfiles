@@ -1,5 +1,5 @@
 source /usr/local/bin/virtualenvwrapper.sh
-
+export GPG_TTY=$(tty)
 
 export NVM_DIR="/Users/davidmidlo/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
