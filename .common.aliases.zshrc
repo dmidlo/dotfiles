@@ -10,6 +10,7 @@ pathfinder(){open -a "Path Finder.app" $1}
 source ~/.mac-get.zshrc
 source ~/.docker_host.zshrc
 source ~/.gfmrender.zshrc
+source ~/.macos-update.zshrc
 
 alias cb='cd ..'
 alias cbb='cd ../..'

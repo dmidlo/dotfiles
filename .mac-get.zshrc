@@ -43,7 +43,7 @@ mac-get () {
             echo "mac-get:  skipping mac-ports dist upgrade."
         fi
     elif [[ $1 = "auto" ]]; then
-        read -q -t 8 $'response?mac-get:  Update Macports? [y/N]: \n'
+        read -q -t 5 $'response?mac-get:  Update Macports? [y/N]: \n'
         if [[ "$response" =~ ^([yY][eE][sS]|[yY])+$ ]]; then
             mac-get update
             mac-get upgrade

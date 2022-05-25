@@ -1,5 +1,9 @@
 echo "::::::::   sourcing .autoupdate.zshrc"
 
+# Check for macOS updates
+macos-update check
+macos-update auto
+
 #Update Macports
 mac-get auto
 
