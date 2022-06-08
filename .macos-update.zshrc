@@ -11,8 +11,8 @@ macos-update () {
     elif [[ $1 = "auto" ]]; then
         read -q -t 5 $'response?mac-update:  Apply system and App Store Updates? [y/N]: \n'
         if [[ "$response" =~ ^([yY][eE][sS]|[yY])+$ ]]; then
-            mac-update update-system
-            mac-update update-appstore
+            macos-update update-system
+            macos-update update-appstore
         else
             echo "  skipping system and app store updates."
         fi
