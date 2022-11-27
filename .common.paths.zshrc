@@ -10,4 +10,4 @@ PATH="$PATH:$HOME/.rvm/bin" # RVM
 PATH=/usr/local/bin/mongodb/bin:$PATH # MongoDB
 PATH="$PATH:/usr/local/share/dotnet/"
 PATH="$PATH:/Users/davidmidlo/.dotnet/tools"
-PATH=$PATH:"/Users/davidmidlo/.nvm/versions/node/v16.15.0/bin":"/Users/davidmidlo/.nvm/versions/node/v16.15.0/bin":"/usr/bin" # npm-completion
+PATH=$PATH:"/Users/davidmidlo/.nvm/versions/node/v16.15.1/bin":"/Users/davidmidlo/.nvm/versions/node/v16.15.1/bin":"/usr/bin" # npm-completion
