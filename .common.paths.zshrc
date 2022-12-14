@@ -11,3 +11,6 @@ PATH=/usr/local/bin/mongodb/bin:$PATH # MongoDB
 PATH="$PATH:/usr/local/share/dotnet/"
 PATH="$PATH:/Users/davidmidlo/.dotnet/tools"
 PATH=$PATH:"/Users/davidmidlo/.nvm/versions/node/v16.15.1/bin":"/Users/davidmidlo/.nvm/versions/node/v16.15.1/bin":"/usr/bin" # npm-completion
+# added for npm-completion https://github.com/Jephuff/npm-bash-completion
+PATH_TO_NPM_COMPLETION="/Users/davidmidlo/.nvm/versions/node/v16.15.1/lib/node_modules/npm-completion"
+export NVM_DIR="$HOME/.nvm"
