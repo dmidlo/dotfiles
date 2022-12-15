@@ -2,7 +2,11 @@ echo "::::::   sourcing .macos-update.zshrc"
 
 macos-update () {
     if [[ $1 = "check" ]]; then
+        echo ""
+        echo ":::::::::: Checking for macOS System Updates."
         softwareupdate -l
+        echo ""
+        echo ":::::::::: Checking for App Store Updates."
         mas outdated
     elif [[ $1 = "update-system" ]]; then
         softwareupdate --all --install --force
