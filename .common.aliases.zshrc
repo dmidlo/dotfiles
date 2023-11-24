@@ -17,3 +17,5 @@ alias cbb='cd ../..'
 alias cbbb='cd ../../..'
 alias cbbbb='cd ../../../..'
 alias cbbbbb='cd ../../../../..'
+
+alias gh_issues_gslide2media="echo 'gslide2media\n' > ~/.gh_issues_gslide2media && gh issue list -m 1 -R dmidlo/gslide2media | awk -F'\t' '{print \$1\"\t\"\$2\"\t\"\$3}' | column -t -s \$'\t' >> ~/.gh_issues_gslide2media"
