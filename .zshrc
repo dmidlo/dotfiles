@@ -6,6 +6,7 @@ source ~/.common.paths.zshrc
 source ~/.common.zshrc
 source ~/.common.aliases.zshrc
 
+
 if [[ "$TERM_PROGRAM" = "vscode" ]]; then
     source ~/.vscode.zshrc
     source ~/.pl10k.zshrc
