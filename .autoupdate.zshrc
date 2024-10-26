@@ -12,7 +12,7 @@ system_updater () {
     # #Update NPM-Completions
     echo ""
     echo ":::::::::: Checking for Updates to NPM-Completions"
-    cd /Users/davidmidlo/.nvm/versions/node/v18.12.1/bin/../lib/node_modules/npm-completion && ./update && cd -
+    cd /Users/davidmidlo/.nvm/versions/node/v20.18.0/bin/../lib/node_modules/npm-completion && ./update && cd -
 }
 
 system_updater_to_file () {

@@ -10,7 +10,7 @@ PATH="$PATH:$HOME/.rvm/bin" # RVM
 PATH=/usr/local/bin/mongodb/bin:$PATH # MongoDB
 PATH="$PATH:/usr/local/share/dotnet/"
 PATH="$PATH:/Users/davidmidlo/.dotnet/tools"
-PATH=$PATH:"/Users/davidmidlo/.nvm/versions/node/v18.12.1/bin":"/Users/davidmidlo/.nvm/versions/node/v18.12.1/bin":"/usr/bin" # npm-completion
+PATH=$PATH:"/Users/davidmidlo/.nvm/versions/node/v20.18.0/bin":"/Users/davidmidlo/.nvm/versions/node/v20.18.0/bin":"/usr/bin" # npm-completion
 # added for npm-completion https://github.com/Jephuff/npm-bash-completion
-PATH_TO_NPM_COMPLETION="/Users/davidmidlo/.nvm/versions/node/v18.12.1/lib/node_modules/npm-completion"
+PATH_TO_NPM_COMPLETION="/Users/davidmidlo/.nvm/versions/node/v20.18.0/lib/node_modules/npm-completion"
 export NVM_DIR="$HOME/.nvm"
